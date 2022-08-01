@@ -3,21 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "nodemon --watch pages --watch styles --watch components  ./backend/server.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "next": "12.2.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
     "@ant-design/icons": "4.2.1",
     "@next/bundle-analyzer": "^9.1.4",
     "antd": "4.3.0",
+    "axios": "^0.27.2",
     "cross-env": "^7.0.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "next": "12.2.3",
+    "nodemon": "^2.0.19",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "eslint": "8.20.0",

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Button } from 'antd'
+import LayoutComponent from '../../components/layout'
 
 const HomePage = () => {
     return (
@@ -10,4 +11,12 @@ const HomePage = () => {
         </>
     )
 }
+HomePage.getLayout = function getLayout(page) {
+    return (
+        <LayoutComponent>
+            {page}
+        </LayoutComponent>
+    )
+}
 export default HomePage
+
